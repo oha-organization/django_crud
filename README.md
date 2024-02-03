@@ -25,6 +25,7 @@ urlpatterns = [
     path("apis/1.0/", include("apis1.urls")),  #  API 1(Function Base Views)
     path("apis/2.0/", include("apis2.urls")),  #  API 2(Class Base Views)
     path("apis/3.0/", include("apis3.urls")),  #  API 3(Generic Class Base Views)
+    path("apis/4.0/", include("apis4.urls")),  #  API 4(Class Base Views with Class and Object Permissions)
 ]
 ```
 
