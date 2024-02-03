@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coreapp Home</title>
+</head>
+<body>
+<h1>Coreapp Home Page</h1>
+<h2>Implementation of Django CRUD at different levels of abstraction.</h2>
+<ol>
+  <li><a href="admin/">Coreapp Admin Interface(Only admin implementation for model)</a></li>
+  <li><a href="{% url 'fbase1:home' %}">Function Base 1(Bare metal - lack of validations and security)</a></li>
+  <li><a href="{% url 'fbase2:home' %}">Function Base 2(With forms.Forms)</a></li>
+  <li><a href="{% url 'fbase2:home' %}">Function Base 3(With ModelForm)</a></li>
+  <li><a href="{% url 'cbase1:home' %}">Class Base 1(With forms.Forms)</a></li>
+  <li><a href="{% url 'cbase2:home' %}">Class Base 2(With ModelForm)</a></li>
+  <li><a href="{% url 'cbase3:home' %}">Class Base 3(Generic Class Base View)</a></li>
+  <li><a href="{% url 'apis1:home' %}">API 1(Function Base Views)</a></li>
+  <li><a href="{% url 'apis2:home' %}">API 2(Class Base Views)</a></li>
+  <li><a href="api/3.0/">API 3(Generic Class Base Views)</a></li>
+</ol>
+</body>
+</html>
+</body>
+</html>

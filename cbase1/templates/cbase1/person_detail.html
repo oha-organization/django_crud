@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Person Detail</title>
+</head>
+<body>
+<h1>cbase1 person detail</h1>
+
+Person name: {{ person.name }} <a href="{% url 'cbase1:person-update' person.pk %}">Edit</a>
+</body>
+</html>

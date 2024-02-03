@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Person List</title>
+</head>
+<body>
+<h1>fbase3 Person List</h1>
+
+<ul>
+{% for person in person_list %}
+    <li>
+      <a href="{% url 'fbase3:person-detail' person.pk %}">{{ person.name }}</a>
+      | <a href="{% url 'fbase3:person-update' person.pk %}">Edit</a>
+      | <a href="{% url 'fbase3:person-delete' person.pk %}">Delete</a></li>
+{% empty %}
+    <li>Sorry, no person in this list.</li>
+{% endfor %}
+</ul>
+</body>
+</html>
