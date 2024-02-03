@@ -30,4 +30,5 @@ urlpatterns = [
     path("api/1.0/", include("apis1.urls")),
     path("api/2.0/", include("apis2.urls")),
     path("api/3.0/", include("apis3.urls")),
+    path("api/4.0/", include("apis4.urls")),
 ]

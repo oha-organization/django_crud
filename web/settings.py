@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "apis1",
     "apis2",
     "apis3",
+    "apis4",
 ]
 
 MIDDLEWARE = [
