@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "cbase3",
     "apis1",
     "apis2",
+    "apis3",
 ]
 
 MIDDLEWARE = [

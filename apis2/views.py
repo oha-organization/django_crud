@@ -12,7 +12,7 @@ from .serializers import PersonSerializer
 class Home(APIView):
     def get(self, request):
         data = {
-            "message": "API 1.0",
+            "message": "API 2.0",
             "person_list": request.build_absolute_uri(reverse("apis2:person-list")),
             "person_detail": request.get_full_path() + "{lookup}/",
         }
