@@ -4,12 +4,12 @@ This project contains reference examples for writing Django View with functional
 
 ## API Endpoints
 
-- GET, POST ```http://127.0.0.1:8000/apis/{version_number}/{plural-model-name}/```
-- GET, PUT, DELETE ```http://127.0.0.1:8000/apis/{version_number}/{plural-model-name}/{lookup}/```
+- GET, POST ```http://127.0.0.1:8000/api/{version_number}/{plural-model-name}/```
+- GET, PUT, DELETE ```http://127.0.0.1:8000/api/{version_number}/{plural-model-name}/{lookup}/```
 
 Example:
-- GET, POST ```http://127.0.0.1:8000/apis/1.0/persons/```
-- GET, PUT, DELETE ```http://127.0.0.1:8000/apis/1.0/persons/{lookup}/```
+- GET, POST ```http://127.0.0.1:8000/api/1.0/persons/```
+- GET, PUT, DELETE ```http://127.0.0.1:8000/api/1.0/persons/{lookup}/```
 
 ## URL Patterns
 ```
@@ -22,10 +22,10 @@ urlpatterns = [
     path("cbase1/", include("c1.urls")),  #  Class Base 1(With forms.Forms)
     path("cbase2/", include("c2.urls")),  #  Class Base 2(With ModelForm)
     path("cbase3/", include("c3.urls")),  #  Class Base 3(Generic Class Base View)
-    path("apis/1.0/", include("apis1.urls")),  #  API 1(Function Base Views)
-    path("apis/2.0/", include("apis2.urls")),  #  API 2(Class Base Views)
-    path("apis/3.0/", include("apis3.urls")),  #  API 3(Generic Class Base Views)
-    path("apis/4.0/", include("apis4.urls")),  #  API 4(Class Base Views with Class and Object Permissions)
+    path("api/1.0/", include("apis1.urls")),  #  API 1(Function Base Views)
+    path("api/2.0/", include("apis2.urls")),  #  API 2(Class Base Views)
+    path("api/3.0/", include("apis3.urls")),  #  API 3(Generic Class Base Views)
+    path("api/4.0/", include("apis4.urls")),  #  API 4(Class Base Views with Class and Object Permissions)
 ]
 ```
 
